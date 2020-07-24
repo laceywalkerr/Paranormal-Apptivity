@@ -1,4 +1,5 @@
 import React from "react";
+import PostCard from "./posts/PostCard.js";
 import "./Para.css";
 
 const Para = () => {
@@ -7,6 +8,9 @@ const Para = () => {
       <h1>
         Welcome to the home page!!!
       </h1>
+      <div>
+        <PostCard />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,42 @@
+/* Imported google web fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Smythe&display=swap');
+
+/*Lettering Styles
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+    color: black;
+    font-family: 'Smythe', cursive;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+p {
+    margin-bottom: 1.5em;
+    color: #d6fcff;
+    color: orchid;
+}
+
+/*Image Styling
+--------------------------------------------------------------*/
+
+img {
+    display: block;
+    border: 0;
+    width: 7%;
+    height: auto;
+}
+
