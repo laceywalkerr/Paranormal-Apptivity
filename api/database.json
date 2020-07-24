@@ -1,0 +1,41 @@
+{
+
+    "users": {
+        "id": "int",
+        "userName": "varchar",
+        "email": "varchar",
+        "password": "varchar",
+        "img": "img",
+        "aboutMe": "varchar"
+    },
+    
+    "posts": {
+        "id": "int",
+        "userId": "int",
+        "title": "varchar",
+        "date": "date",
+        "latitude": "int",
+        "logitude": "int",
+        "location": "varchar",
+        "description": "varchar",
+        "categoryId": "int"
+    },
+        
+    "catagory": {
+        "id": "int",
+        "catagoryName": "varchar"
+    },
+    
+    "chatroom": {
+        "id": "int",
+        "userId": "int",
+        "message": "varchar"
+    },
+    
+    
+    "friends": {
+        "id": "int",
+        "currentUserId": "int",
+        "userId": "int"
+    }
+}
