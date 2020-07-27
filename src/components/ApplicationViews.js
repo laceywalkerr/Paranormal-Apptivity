@@ -1,7 +1,7 @@
 import { Route } from "react-router-dom";
 import React from "react";
 import Home from "./home/Home";
-import PostCard from "../components/posts/PostCard";
+import PostList from "../components/posts/PostList";
 
 const ApplicationViews = () => {
   return (
@@ -16,7 +16,7 @@ const ApplicationViews = () => {
       <Route
         path="/posts"
         render={props => {
-          return <PostCard />;
+          return <PostList />;
         }}
       />
     </React.Fragment>
