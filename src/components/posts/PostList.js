@@ -1,12 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import PostCard from "./PostCard";
 import PostManager from '../../modules/PostManager';
 
 const PostList = () => {
-
-    const PostList = () => {
-        const [posts,setPosts] = useState([]);
-    }
+const [posts, setPosts] = useState([]);
     const getPosts = () => {
         return PostManager.getAll().then(postsFromAPI => {
             setPosts(postsFromAPI);
@@ -20,7 +17,8 @@ const PostList = () => {
 
     return (
         <div className="container-cards">
-        {posts.map(post => <PostCard />)}
+        {posts.map(post => 
+        <PostCard key={post.id} post={post}/>)}
         </div>
     );
 };

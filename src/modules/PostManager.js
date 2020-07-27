@@ -5,6 +5,6 @@ export default {
     return fetch(`${remoteURL}/posts/${id}`).then(result => result.json())
   },
   getAll() {
-    return fetch(`${remoteURL}/postss`).then(result => result.json())
+    return fetch(`${remoteURL}/posts`).then(result => result.json())
   }
 }

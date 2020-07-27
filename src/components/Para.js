@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "./navbar/NavBar";
-import PostCard from "./posts/PostCard";
+import PostList from "./posts/PostList";
 import "./Para.css";
 
 const Para = () => {
@@ -11,7 +11,7 @@ const Para = () => {
         Welcome to the home page!!!
       </h1>
       <div>
-        <PostCard />
+        <PostList />
       </div>
     </>
   );

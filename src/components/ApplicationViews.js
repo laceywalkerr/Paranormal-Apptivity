@@ -9,13 +9,13 @@ const ApplicationViews = () => {
       <Route
         exact
         path="/"
-        render={props => {
+        render={(props) => {
           return <Home />;
         }}
       />
       <Route
         path="/posts"
-        render={props => {
+        render={(props) => {
           return <PostList />;
         }}
       />
