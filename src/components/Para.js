@@ -1,17 +1,19 @@
 import React from "react";
-import PostCard from "./posts/PostCard.js";
+import NavBar from "./navbar/NavBar";
+import PostCard from "./posts/PostCard";
 import "./Para.css";
 
 const Para = () => {
   return (
-    <div>
+    <>
+      <NavBar />
       <h1>
         Welcome to the home page!!!
       </h1>
       <div>
         <PostCard />
       </div>
-    </div>
+    </>
   );
 };
 
