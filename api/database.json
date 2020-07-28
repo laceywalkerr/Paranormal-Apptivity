@@ -22,6 +22,17 @@
         "location": "varchar",
         "description": "varchar",
         "categoryId": "int"
+        },
+        {
+            "id": 1,
+            "userId": "int",
+            "title": "ghost",
+            "date": "date",
+            "latitude": "int",
+            "logitude": "int",
+            "location": "varchar",
+            "description": "varchar",
+            "categoryId": "int"
         }
     ],
         

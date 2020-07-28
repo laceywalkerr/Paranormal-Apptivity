@@ -1,0 +1,4 @@
+#root > .card-outside {
+    max-width: 400px;
+    margin: 10px auto;
+  }

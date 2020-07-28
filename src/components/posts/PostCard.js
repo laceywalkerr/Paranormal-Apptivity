@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PostCard = props => {
     return (
@@ -27,7 +28,9 @@ const PostCard = props => {
                     Encounter Summary: {props.post.description}
                 </p>
                 <button type="button" onClick={() => props.deletePost(props.post.id)}>Delete Entry</button>
-
+                <Link to={`/posts/${props.post.id}`}>
+                <button>More Info</button>
+                </Link>
             </div>
         </div>
     );

@@ -13,12 +13,15 @@ const ApplicationViews = () => {
           return <Home />;
         }}
       />
-      <Route
+      <Route exact
         path="/posts"
         render={(props) => {
           return <PostList />;
-        }}
-      />
+        }}/>
+      <Route post
+      path="/posts/:postId(\d+)" render={(props) => {
+      return <PostDetail postId={parseInt(props.match.params.postId)}/>
+      }} />
     </React.Fragment>
   );
 };
