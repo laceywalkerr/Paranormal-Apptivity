@@ -15,7 +15,7 @@ const PostDetail = props => {
     useEffect(() => {
         PostManager.get(props.postId)
         .then(post => {
-            setpost({
+            setPost({
             title: post.title,
             date: post.date,
             latitude: post.latitude, 
@@ -39,6 +39,9 @@ const PostDetail = props => {
         <p>Logitude: {post.logitude}</p>
         <p>Location Description: {post.location}</p>
         <p>Encounter Summary: {post.description}</p>
+        <button type="button" disabled={isLoading} onClick={handleDelete}>
+            Delete Entry
+        </button>
       </div>
     </div>
   );
