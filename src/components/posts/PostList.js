@@ -10,6 +10,11 @@ const [posts, setPosts] = useState([]);
         });
     };
 
+    const deletePost = id => {
+        PostManager.delete(id)
+          .then(() => PostManager.getAll().then(setPosts));
+    };
+
     useEffect(() => {
         getPosts();
     }, []);
@@ -18,7 +23,10 @@ const [posts, setPosts] = useState([]);
     return (
         <div className="container-cards">
         {posts.map(post => 
-        <PostCard key={post.id} post={post}/>)}
+        <PostCard 
+        key={post.id} 
+        post={post}
+        deletePost={deletePost}/>)}
         </div>
     );
 };
