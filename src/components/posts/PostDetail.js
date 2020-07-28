@@ -3,17 +3,29 @@ import PostManager from '../../modules/PostManager';
 import './PostDetail.css'
 
 const PostDetail = props => {
-  const [post, setPost] = useState({ name: "", breed: "" });
+    const [post, setPost] = useState(
+      { title: "", date: "", latitude: "", logitude: "", location: "", description: ""});
 
-  useEffect(() => {
-    PostManager.get(props.postId)
-      .then(post => {
-        setpost({
-          name: post.name,
-          breed: post.breed
+    const handleDelete = () => {
+    setIsLoading(true);
+        PostManager.delete(props.postId).then(() =>
+            props.history.push("/posts")
+        );
+        };
+    useEffect(() => {
+        PostManager.get(props.postId)
+        .then(post => {
+            setpost({
+            title: post.title,
+            date: post.date,
+            latitude: post.latitude, 
+            logitude: post.logitude, 
+            location: post.location, 
+            description: post.description
+            });
+            setIsLoading(false);
         });
-      });
-  }, [props.postId]);
+    }, [props.postId]);
 
   return (
     <div className="card-outside">

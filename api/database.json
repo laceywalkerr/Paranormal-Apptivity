@@ -24,7 +24,7 @@
         "categoryId": "int"
         },
         {
-            "id": 1,
+            "id": 2,
             "userId": "int",
             "title": "ghost",
             "date": "date",
