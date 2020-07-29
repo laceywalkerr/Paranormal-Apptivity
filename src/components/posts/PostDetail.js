@@ -28,8 +28,8 @@ const PostDetail = props => {
     }, [props.postId]);
 
   return (
-    <div className="card-outside">
-      <div className="card-inside">
+    <div className="container-cards">
+      <div className="card-content">
         <picture>
           <img src={require('./postimg.png')} alt="Entry Icon" />
         </picture>

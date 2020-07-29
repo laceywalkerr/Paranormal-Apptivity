@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const PostCard = props => {
     return (
-        <div className="card-outside">
-            <div className="card-inside">
+        <div className="container-cards">
+            <div className="card-content">
                 <picture>
                     <img src={require("./postimg.png")} alt="Entry Icon" />
                 </picture>

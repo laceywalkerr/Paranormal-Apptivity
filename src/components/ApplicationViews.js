@@ -10,7 +10,7 @@ const ApplicationViews = () => {
       <Route
         exact
         path="/"
-        render={(props) => {
+        render={props => {
           return <Home />;
         }}/>
 
@@ -20,17 +20,20 @@ const ApplicationViews = () => {
           return <PostList {...props} />;
         }}/>
 
+      <Route 
+        path="/posts/new" 
+        render={(props) => {
+        return <PostForm {...props} />
+        }} />
+
       <Route post
       path="/posts/:postId(\d+)" 
       render={(props) => {
-      return <PostDetail postId={parseInt(props.match.params.postId)}/>
+      return <PostDetail postId={parseInt(props.match.params.postId)}
+      {...props}/>
       }} />
 
-      <Route 
-      path="/posts/new" 
-      render={(props) => {
-      return <PostForm {...props} />
-      }} />
+      
 
     </React.Fragment>
   );

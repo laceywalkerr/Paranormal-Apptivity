@@ -7,11 +7,7 @@ export default {
   getAll() {
     return fetch(`${remoteURL}/posts`).then(result => result.json())
   },
-  delete(id) {
-    return fetch(`${remoteURL}/posts/${id}`, {
-      method: "DELETE"
-    }).then(result => result.json())
-  },
+
   post(newPost) {
     return fetch(`${remoteURL}/posts`, {
         method: "POST",
@@ -20,5 +16,11 @@ export default {
         },
         body: JSON.stringify(newPost)
     }).then(data => data.json())
-}
+  },
+  
+  delete(id) {
+    return fetch(`${remoteURL}/posts/${id}`, {
+      method: "DELETE"
+    }).then(result => result.json())
+  }
 }

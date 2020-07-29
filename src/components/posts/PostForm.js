@@ -3,13 +3,13 @@ import PostManager from '../../modules/PostManager';
 import './PostForm.css'
 
 const PostForm = props => {
-  const [post, setPost] = useState({ title: "", date: "" });
+  const [post, setPost] = useState({ title: "", date: "", latitude: "", logitude: "", location: "", description: ""});
   const [isLoading, setIsLoading] = useState(false);
 
   const handleFieldChange = evt => {
     const stateToChange = { ...post };
     stateToChange[evt.target.id] = evt.target.value;
-    setAnimal(stateToChange);
+    setPost(stateToChange);
   };
 
   const constructNewPost = evt => {
@@ -66,4 +66,4 @@ const PostForm = props => {
   );
 };
 
-export default PostForm
+export default PostForm;

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PostCard from "./PostCard";
+import PostCard from './PostCard';
 import PostManager from '../../modules/PostManager';
 
 const PostList = (props) => {
@@ -24,7 +24,8 @@ const [posts, setPosts] = useState([]);
         <section className="section-content">
         <button type="button"
             className="btn"
-            onClick={() => {props.history.push("/posts/new")}}>
+            onClick={() => 
+            {props.history.push("/posts/new")}}>
             Create New Entry
         </button>
         </section>
