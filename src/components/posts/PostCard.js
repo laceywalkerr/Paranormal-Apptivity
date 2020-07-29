@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PostCard = props => {
     return (
-        <div className="card-outside">
-            <div className="card-inside">
+        <div className="container-cards">
+            <div className="card-content">
                 <picture>
                     <img src={require("./postimg.png")} alt="Entry Icon" />
                 </picture>
@@ -26,8 +27,12 @@ const PostCard = props => {
                 <p>
                     Encounter Summary: {props.post.description}
                 </p>
-
-
+                <button type="button" onClick={() => props.deletePost(props.post.id)}>
+                    Delete Entry
+                </button>
+                <Link to={`/posts/${props.post.id}`}>
+                <button>More Info</button>
+                </Link>
             </div>
         </div>
     );

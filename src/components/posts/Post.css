@@ -1,9 +1,9 @@
-.card {
+.container-cards {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
-    background: aliceblue;
+    background: rgb(158, 158, 160);
     margin-bottom: 2em;
     flex: 0 1 24%;
   }
@@ -28,10 +28,10 @@
     color: darkslategrey;
   }
   
-  .card button {
-    background-color: cornflowerblue;
+  .card-outside button {
+    background-color: black;
     border: none;
-    color: cornsilk;
+    color: ghostwhite;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -42,6 +42,6 @@
     width: 100%;
   }
   
-  .card button:hover {
+  .card-outside button:hover {
     background-color: darkblue;
   }
