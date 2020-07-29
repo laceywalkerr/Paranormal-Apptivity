@@ -5,7 +5,7 @@ import './PostDetail.css'
 const PostDetail = props => {
     const [post, setPost] = useState(
       { title: "", date: "", latitude: "", logitude: "", location: "", description: ""});
-
+      const [isLoading, setIsLoading] = useState(true);
     const handleDelete = () => {
     setIsLoading(true);
         PostManager.delete(props.postId).then(() =>

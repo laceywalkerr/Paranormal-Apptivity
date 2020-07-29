@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import PostManager from '../../modules/PostManager';
-import './PostForm.css'
 
 const PostForm = props => {
   const [post, setPost] = useState({ title: "", date: "", latitude: "", logitude: "", location: "", description: ""});

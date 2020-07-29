@@ -3,7 +3,8 @@ import PostCard from './PostCard';
 import PostManager from '../../modules/PostManager';
 
 const PostList = (props) => {
-const [posts, setPosts] = useState([]);
+    const [posts, setPosts] = useState([]);
+    
     const getPosts = () => {
         return PostManager.getAll().then(postsFromAPI => {
             setPosts(postsFromAPI);

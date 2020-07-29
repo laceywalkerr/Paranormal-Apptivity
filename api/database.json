@@ -26,7 +26,7 @@
         {
             "id": 2,
             "userId": "int",
-            "title": "ghost",
+            "title": "who you gonna call?",
             "date": "date",
             "latitude": "int",
             "logitude": "int",

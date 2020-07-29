@@ -2,16 +2,17 @@ import { Route } from "react-router-dom";
 import React from "react";
 import Home from "./home/Home";
 import PostList from "../components/posts/PostList";
-import PostForm from './posts/PostForm'
+import PostDetail from "../components/posts/PostDetail";
+import PostForm from '../components/posts/PostForm';
 
-const ApplicationViews = () => {
+const ApplicationViews = (props) => {
   return (
     <React.Fragment>
       <Route
         exact
         path="/"
         render={props => {
-          return <Home />;
+          return <Home {...props} />;
         }}/>
 
       <Route exact
