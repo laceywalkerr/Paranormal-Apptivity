@@ -13,7 +13,7 @@ const PostForm = props => {
 
   const constructNewPost = evt => {
     evt.preventDefault();
-    if (post.title === "" || post.date === "" || post.description === "") {
+    if (post.title === "" || post.date === "" || post.description === "" ||  post.latitude === "" || post.logitude === "" || post.location === "" ) {
       window.alert("Please input an entry title, date and description");
     } else {
       setIsLoading(true);
@@ -35,6 +35,7 @@ const PostForm = props => {
               placeholder="Post title"
             />
             <label htmlFor="title">Title</label>
+            
             <input
               type="text"
               required
@@ -43,14 +44,43 @@ const PostForm = props => {
               placeholder="Date"
             />
             <label htmlFor="date">Date</label>
-          <input
+            
+            <input
               type="text"
               required
               onChange={handleFieldChange}
-              id="description"
-              placeholder="Description"
+              id="latitude"
+              placeholder="Latitude"
             />
-            <label htmlFor="description">Description</label>
+            <label htmlFor="latitude">Latitude</label>
+
+            <input
+              type="text"
+              required
+              onChange={handleFieldChange}
+              id="logitude"
+              placeholder="Logitude"
+            />
+            <label htmlFor="logitude">Logitude</label>
+
+            <input
+              type="text"
+              required
+              onChange={handleFieldChange}
+              id="location"
+              placeholder="Location"
+            />
+            <label htmlFor="location">Location</label>
+
+            <input
+                type="text"
+                required
+                onChange={handleFieldChange}
+                id="description"
+                placeholder="Description"
+              />
+              <label htmlFor="description">Description</label>
+
           </div>
           <div className="alignRight">
             <button

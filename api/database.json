@@ -11,35 +11,22 @@
   ],
   "posts": [
     {
-      "id": 1,
-      "userId": "int",
-      "title": "ghost",
-      "date": "date",
-      "latitude": "int",
-      "logitude": "int",
-      "location": "varchar",
-      "description": "varchar",
-      "categoryId": "int"
-    },
-    {
-      "id": 2,
-      "userId": "int",
-      "title": "who you gonna call?",
-      "date": "date",
-      "latitude": "int",
-      "logitude": "int",
-      "location": "varchar",
-      "description": "varchar",
-      "categoryId": "int"
-    },
-    {
-      "title": "5 Ways to Stop Sleeping In",
-      "date": "01-02-20",
-      "latitude": "",
-      "logitude": "",
-      "location": "",
-      "description": "Is weird",
+      "title": "Bright Lights",
+      "date": "07-29-20",
+      "latitude": "36.0894° N",
+      "logitude": "86.7425° W",
+      "location": "Grassmere Zoo",
+      "description": "I saw a bright light in the old house in the back of the property.  Jinkies!",
       "id": 3
+    },
+    {
+      "title": "Phantom Cat",
+      "date": "01-02-20",
+      "latitude": "36°09′26″N",
+      "logitude": "86°47′05″W",
+      "location": "Union Station, Nashville TN",
+      "description": "Dude. Okay. So I was at Union Station, and I saw this HUGE jaguar! I'm not even joking!! I tried to take a photo but when I pulled out my phone it was already gone. I ran for it lol.",
+      "id": 4
     }
   ],
   "catagory": [
@@ -48,18 +35,6 @@
       "catagoryName": "varchar"
     }
   ],
-  "chatroom": [
-    {
-      "id": "int",
-      "userId": "int",
-      "message": "varchar"
-    }
-  ],
-  "friends": [
-    {
-      "id": "int",
-      "currentUserId": "int",
-      "userId": "int"
-    }
-  ]
+  "chatroom": [],
+  "friends": []
 }
