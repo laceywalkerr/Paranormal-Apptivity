@@ -27,7 +27,9 @@ const PostCard = props => {
                 <p>
                     Encounter Summary: {props.post.description}
                 </p>
-                <button type="button" onClick={() => props.deletePost(props.post.id)}>Delete Entry</button>
+                <button type="button" onClick={() => props.deletePost(props.post.id)}>
+                    Delete Entry
+                </button>
                 <Link to={`/posts/${props.post.id}`}>
                 <button>More Info</button>
                 </Link>

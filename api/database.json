@@ -1,62 +1,65 @@
 {
-
-    "users": [
-        {
-        "id": 1,
-        "userName": "varchar",
-        "email": "varchar",
-        "password": "varchar",
-        "img": "img",
-        "aboutMe": "varchar"
-        }
-    ],
-    
-    "posts": [
-        {
-        "id": 1,
-        "userId": "int",
-        "title": "ghost",
-        "date": "date",
-        "latitude": "int",
-        "logitude": "int",
-        "location": "varchar",
-        "description": "varchar",
-        "categoryId": "int"
-        },
-        {
-            "id": 2,
-            "userId": "int",
-            "title": "who you gonna call?",
-            "date": "date",
-            "latitude": "int",
-            "logitude": "int",
-            "location": "varchar",
-            "description": "varchar",
-            "categoryId": "int"
-        }
-    ],
-        
-    "catagory": [
-        {
-        "id": "int",
-        "catagoryName": "varchar"
-        }
-    ],
-    
-    "chatroom": [
-        {
-        "id": "int",
-        "userId": "int",
-        "message": "varchar"
-        }
-    ],
-    
-    
-    "friends": [
-        {
-        "id": "int",
-        "currentUserId": "int",
-        "userId": "int"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "userName": "varchar",
+      "email": "varchar",
+      "password": "varchar",
+      "img": "img",
+      "aboutMe": "varchar"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "userId": "int",
+      "title": "ghost",
+      "date": "date",
+      "latitude": "int",
+      "logitude": "int",
+      "location": "varchar",
+      "description": "varchar",
+      "categoryId": "int"
+    },
+    {
+      "id": 2,
+      "userId": "int",
+      "title": "who you gonna call?",
+      "date": "date",
+      "latitude": "int",
+      "logitude": "int",
+      "location": "varchar",
+      "description": "varchar",
+      "categoryId": "int"
+    },
+    {
+      "title": "5 Ways to Stop Sleeping In",
+      "date": "01-02-20",
+      "latitude": "",
+      "logitude": "",
+      "location": "",
+      "description": "Is weird",
+      "id": 3
+    }
+  ],
+  "catagory": [
+    {
+      "id": "int",
+      "catagoryName": "varchar"
+    }
+  ],
+  "chatroom": [
+    {
+      "id": "int",
+      "userId": "int",
+      "message": "varchar"
+    }
+  ],
+  "friends": [
+    {
+      "id": "int",
+      "currentUserId": "int",
+      "userId": "int"
+    }
+  ]
 }
