@@ -2,7 +2,7 @@ import { Route } from "react-router-dom";
 import React from "react";
 import Home from "./home/Home";
 import PostList from "../components/posts/PostList";
-import PostForm from './post/PostForm'
+import PostForm from './posts/PostForm'
 
 const ApplicationViews = () => {
   return (
@@ -26,12 +26,13 @@ const ApplicationViews = () => {
         return <PostForm {...props} />
         }} />
 
-      <Route post
-      path="/posts/:postId(\d+)" 
-      render={(props) => {
-      return <PostDetail postId={parseInt(props.match.params.postId)}
-      {...props}/>
-      }} />
+      <Route 
+        path="/posts/:postId(\d+)" 
+        render={props => {
+        return <PostDetail 
+        postId={parseInt(props.match.params.postId)}
+        {...props}/>
+        }} />
 
       
 
