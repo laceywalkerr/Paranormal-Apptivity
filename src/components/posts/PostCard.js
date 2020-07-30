@@ -27,11 +27,14 @@ const PostCard = props => {
                 <p>
                     Encounter Summary: {props.post.description}
                 </p>
+                <button type="button" onClick={() => props.history.push(`/posts/${props.post.id}/edit`)}>
+                    Edit
+                    </button>
                 <button type="button" onClick={() => props.deletePost(props.post.id)}>
                     Delete Entry
-                </button>
+                    </button>
                 <Link to={`/posts/${props.post.id}`}>
-                <button>More Info</button>
+                    <button>More Info</button>
                 </Link>
             </div>
         </div>

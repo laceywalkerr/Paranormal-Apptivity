@@ -22,5 +22,15 @@ export default {
     return fetch(`${remoteURL}/posts/${id}`, {
       method: "DELETE"
     }).then(result => result.json())
+  },
+
+  update(editedPost) {
+    return fetch(`${remoteURL}/posts/${editedPost.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(editedPost)
+    }).then(data => data.json());
   }
 }
