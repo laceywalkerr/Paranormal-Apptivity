@@ -11,13 +11,13 @@
   ],
   "posts": [
     {
-      "title": "Bright Lights",
+      "id": 3,
+      "title": "Bright Lights ",
       "date": "07-29-20",
       "latitude": "36.0894° N",
       "logitude": "86.7425° W",
       "location": "Grassmere Zoo",
-      "description": "I saw a bright light in the old house in the back of the property.  Jinkies!",
-      "id": 3
+      "description": "I saw a bright light in the old house in the back of the property.  Jinkies!"
     },
     {
       "title": "Phantom Cat",
