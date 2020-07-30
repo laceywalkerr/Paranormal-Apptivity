@@ -36,7 +36,7 @@ const PostEditForm = props => {
         setPost(post);
         setIsLoading(false);
       });
-  }, []);
+  }, [props]);
 
   return (
     <>
@@ -104,7 +104,7 @@ const PostEditForm = props => {
             <label htmlFor="description">description</label>
 
           </div>
-          
+
           <div className="alignRight">
             <button
               type="button" disabled={isLoading}
