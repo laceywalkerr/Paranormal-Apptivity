@@ -10,7 +10,7 @@ const Login = props => {
   };
 
   const handleLogin = (e) => {
-    e.preventDevault();
+    e.preventDefault();
 
     sessionStorage.setItem(
       "credentials",
@@ -22,7 +22,7 @@ const Login = props => {
   return (
     <form onSubmit={handleLogin}>
       <fieldset>
-        <h3>Hello! Please sign in!</h3>
+        <h3>Hello, please sign in!</h3>
         <div className="formgrid">
           <input onChange={handleFieldChange} type="email"
           id="email"

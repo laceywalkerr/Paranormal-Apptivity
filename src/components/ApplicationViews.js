@@ -1,14 +1,16 @@
-import { Route, Redirect } from "react-router-dom";
 import React from "react";
-import Login from "./login/Login"
+import { Route, Redirect } from "react-router-dom";
+import Login from "./login/Login";
 import Home from "./home/Home";
 import PostList from "../components/posts/PostList";
 import PostDetail from "../components/posts/PostDetail";
 import PostForm from '../components/posts/PostForm';
 
-const isAuthenticated = () => sessionStorage.getItem("credentials") !== null;
+
 
 const ApplicationViews = (props) => {
+  const isAuthenticated = () => sessionStorage.getItem("credentials") !== null;
+  
   return (
     <React.Fragment>
       <Route
@@ -22,17 +24,17 @@ const ApplicationViews = (props) => {
 
       <Route exact
         path="/posts"
-        render={(props) => {
+        render={props => {
           if (isAuthenticated()) {
             return <PostList {...props} />
           } else {
             return <Redirect to="/login" />
           }
-        }}/>
+        }} />
 
       <Route 
         path="/posts/new" 
-        render={(props) => {
+        render={props => {
         return <PostForm {...props} />
         }} />
 
