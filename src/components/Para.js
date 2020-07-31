@@ -5,7 +5,13 @@ import ApplicationViews from "./ApplicationViews"
 import "./Para.css";
 
 const Para = () => {
-  const isAuthenticated = () => sessionStorage.getItem("credentials") !== null;
+  const isAuthenticated = () =>  { 
+    if (sessionStorage.getItem("credentials") !== null) {
+      return true 
+    } else {
+      return false
+    }
+  }
 
   const [hasUser, setHasUser] = useState(isAuthenticated());
 
@@ -16,7 +22,7 @@ const Para = () => {
 
   const clearUser = () => {
     sessionStorage.clear();
-    setHasUser(isAuthenticated());
+    setHasUser(isAuthenticated())
   }
   
   return (
