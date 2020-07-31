@@ -1,4 +1,5 @@
-import React from "react";
+
+import React, { useState } from 'react';
 import NavBar from "./navbar/NavBar";
 import ApplicationViews from "./ApplicationViews"
 import "./Para.css";
