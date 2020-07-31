@@ -12,7 +12,7 @@ import PostForm from '../components/posts/PostForm';
 const ApplicationViews = (props) => {
   const hasUser = props.hasUser;
   const setUser = props.setUser;
-  const isAuthenticated = () => sessionStorage.getItem("credentials") !== null;
+  
 
   return (
       <>
@@ -24,7 +24,7 @@ const ApplicationViews = (props) => {
           return <Home {...props} />;
         }} />
 
-      <Route path="/login" render={props => {
+      <Route exact path="/login" render={props => {
           return <Login setUser={setUser} {...props} />
         }} />
 
@@ -34,7 +34,7 @@ const ApplicationViews = (props) => {
           if (hasUser) {
             return <PostList {...props} />
           } else {
-            return <Redirect to="/login" />
+            return <Redirect to="/login" {...props} />
           }
         }} />
 
@@ -53,7 +53,7 @@ const ApplicationViews = (props) => {
           }} />
 
         <Route path="/posts/:postId(\d+)/edit" render={props => {
-          if (isAuthenticated()) {
+          if (hasUser) {
             return <PostEditForm {...props} />
           } else {
             return <Redirect to="/login" />
