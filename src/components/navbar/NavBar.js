@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
-const NavBar = () => {
+const NavBar = props => {
   return (
     <header>
       <h1 className="site-title">
@@ -40,6 +40,11 @@ const NavBar = () => {
               Friends
             </Link>
           </li>
+          {!props.hasUser
+            ? <li>
+                <Link className="nav-link" to="/login"> Login </Link>
+              </li>
+            : null}
         </ul>
       </nav>
     </header>

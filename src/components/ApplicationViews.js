@@ -10,10 +10,14 @@ import PostForm from '../components/posts/PostForm';
 
 
 const ApplicationViews = (props) => {
+  const hasUser = props.hasUser;
+  const setUser = props.setUser;
   const isAuthenticated = () => sessionStorage.getItem("credentials") !== null;
   
   return (
+    <>
     <React.Fragment>
+      
       <Route
         exact
         path="/"
@@ -21,12 +25,13 @@ const ApplicationViews = (props) => {
           return <Home {...props} />;
         }}/>
 
-      <Route path="/login" component={Login} />
+      <Route path="/login" render={props => {
+    return <Login setUser={setUser} {...props}  />
 
       <Route exact
         path="/posts"
         render={props => {
-          if (isAuthenticated()) {
+          if (hasUser) {
             return <PostList {...props} />
           } else {
             return <Redirect to="/login" />
