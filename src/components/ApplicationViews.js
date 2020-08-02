@@ -6,6 +6,8 @@ import PostList from "../components/posts/PostList";
 import PostEditForm from "../components/posts/PostEditForm";
 import PostDetail from "../components/posts/PostDetail";
 import PostForm from '../components/posts/PostForm';
+import ChatCard from "./chatroom/ChatCard"
+import FriendCard from "../components/friends/FriendCard"
 
 
 
@@ -16,7 +18,7 @@ const ApplicationViews = (props) => {
 
   return (
       <>
-
+ 
       <Route
         exact
         path="/"
@@ -28,6 +30,7 @@ const ApplicationViews = (props) => {
           return <Login setUser={setUser} {...props} />
         }} />
 
+      {/* ***************POSTS**************** */}
       <Route exact
         path="/posts"
         render={props => {
@@ -59,7 +62,33 @@ const ApplicationViews = (props) => {
             return <Redirect to="/login" />
           }
         }} />
-    
+        {/* ***************END POSTS**************** */}
+
+        {/* ***************CHATROOM**************** */}
+
+        <Route exact
+        path="/chatroom"
+        render={props => {
+          if (hasUser) {
+            return <ChatCard {...props} />
+          } else {
+            return <Redirect to="/login" {...props} />
+          }
+        }} />
+        {/* ***************END CHATROOM**************** */}
+
+
+        {/* ***************FRIENDS**************** */}
+
+        <Route exact
+        path="/friends"
+        render={props => {
+          if (hasUser) {
+            return <FriendCard {...props} />
+          } else {
+            return <Redirect to="/login" {...props} />
+          }
+        }} />
       </>
   );
 };
