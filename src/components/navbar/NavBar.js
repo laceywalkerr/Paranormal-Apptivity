@@ -18,27 +18,12 @@ const NavBar = props => {
         <ul className="container">
           <li>
           <Link className="nav-link" to="/">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link className="nav-link" to="/users">
-              User
+              Home 
             </Link>
           </li>
           <li>
           <Link className="nav-link" to="/posts">
-              Entry
-            </Link>
-          </li>
-          <li>
-          <Link className="nav-link" to="/catagory">
-              Category
-            </Link>
-          </li>
-          <li>
-          <Link className="nav-link" to="/chatroom">
-              Chat
+              Dashboard
             </Link>
           </li>
           <li>
@@ -46,6 +31,12 @@ const NavBar = props => {
               Friends
             </Link>
           </li>
+          <li>
+          <Link className="nav-link" to="/chatroom">
+              Chatroom
+            </Link>
+          </li>
+
           {props.hasUser
             ? <li>
                 <span className="nav-link" onClick={handleLogout}> Logout </span>
