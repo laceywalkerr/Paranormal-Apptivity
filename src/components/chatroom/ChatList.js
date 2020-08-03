@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import ChatCard from "./ChatCard"
-import ChatroomManager from "../../modules/ChatManager"
+import ChatManager from "../../modules/ChatManager"
 
 const ChatList = (props) => {
-    const [messages, setMessages] = useState([]);
-    const getMessages = () => {
-        return MessageManager.getAll().then(messagesFromAPI => {
-          setMessages(messagesFromAPI)
+    const [chat, setChat] = useState([]);
+    const getChat = () => {
+        return ChatManager.getAll().then(chatFromAPI => {
+          setChat(chatFromAPI)
         });
     };
 
     useEffect(() => {
-        getMessages();
+        getChat();
 
     }, [])
 
@@ -20,18 +20,18 @@ const ChatList = (props) => {
       <section className="section-content">
         <button type="button"
           className="btn"
-        onClick={() => {props.history.push("/messages/new")}}>
+        onClick={() => {props.history.push("/chat/new")}}>
           Add Message
         </button>
       </section>
         <div className="container-card">
-          {messages.map(message => <MessageCard
-          key={message.id}
-          message={message}
+          {chat.map(chat => <ChatCard
+          key={chat.id}
+          chat={chat}
           {...props} 
           />)}
         </div>
         </>
     )
 }
-export default MessageList
+export default ChatList
