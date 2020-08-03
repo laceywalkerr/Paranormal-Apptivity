@@ -35,6 +35,16 @@
       "catagoryName": "varchar"
     }
   ],
-  "chatroom": [],
+  "chatroom": [
+    {
+      "id": 1,
+      "chat": "Why don't you go haunt a house? Rattle some chains or something."
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "chat": "What's a ghost's favourite dessert? I SCREAM lol"
+    }
+  ],
   "friends": []
 }
