@@ -43,6 +43,14 @@
     {
       "id": 2,
       "chat": "What's a ghost's favourite dessert? I SCREAM lol"
+    },
+    {
+      "chat": "Hello fellow comrades! ",
+      "id": 3
+    },
+    {
+      "chat": "Did ya'll watch that new episode of ghost adventures last night? It creeped me out lol",
+      "id": 4
     }
   ],
   "friends": []

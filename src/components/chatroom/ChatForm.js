@@ -21,7 +21,7 @@ const ChatForm = props => {
 
         ChatManager.post(chat)
         
-        .then(() => props.history.push("/chat"));
+        .then(() => props.history.push("/chatroom"));
     }
 };
 return (

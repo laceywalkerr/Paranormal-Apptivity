@@ -20,7 +20,7 @@ const ChatList = (props) => {
       <section className="section-content">
         <button type="button"
           className="btn"
-        onClick={() => {props.history.push("/chat/new")}}>
+        onClick={() => {props.history.push("/chatroom/new")}}>
           Add Message
         </button>
       </section>
