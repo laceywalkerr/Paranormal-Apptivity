@@ -1,12 +1,18 @@
 import React from "react"
 
-const ChatCard = () => {
+const ChatCard = (props) => {
     return (
-        <>
-          <div className="chat">
-              <h2>Welcome to the Chat Room!</h2>
-          </div>
-        </>
+        <div className="card">
+            <div className="card-content">
+                <h3>
+                    Message: <span className="card-chat">{props.chat.chat}</span>
+                </h3>
+                <button type="button"
+                    onClick={() => props.history.push(`/chatroom/${props.chat.id}/edit`)}>
+                    Edit Message
+                </button>
+            </div>
+        </div>
     )
 }
 

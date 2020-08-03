@@ -6,7 +6,9 @@ import PostList from "../components/posts/PostList";
 import PostEditForm from "../components/posts/PostEditForm";
 import PostDetail from "../components/posts/PostDetail";
 import PostForm from '../components/posts/PostForm';
-import ChatCard from "./chatroom/ChatCard"
+import ChatList from "./chatroom/ChatList"
+import ChatForm from "./chatroom/ChatForm"
+import ChatEditForm from "./chatroom/ChatEditForm"
 import FriendCard from "../components/friends/FriendCard"
 
 
@@ -70,11 +72,26 @@ const ApplicationViews = (props) => {
         path="/chatroom"
         render={props => {
           if (hasUser) {
-            return <ChatCard {...props} />
+            return <ChatList {...props} />
           } else {
             return <Redirect to="/login" {...props} />
           }
         }} />
+
+        <Route
+        path="/chatroom/new"
+        render={props => {
+          return <ChatForm {...props} />
+        }} />
+
+        <Route path="/chatroom/:chatId(\d+)/edit" render={props => {
+          if (hasUser) {
+            return <ChatEditForm {...props} />
+          } else {
+            return <Redirect to="/login" />
+          }
+        }} />
+        
         {/* ***************END CHATROOM**************** */}
 
 
