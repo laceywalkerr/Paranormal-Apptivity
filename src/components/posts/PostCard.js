@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Post.css"
 
 const PostCard = props => {
     return (
@@ -13,19 +14,18 @@ const PostCard = props => {
                     {props.post.title}</span>
                 </h3>
                 <p>
-                    Date: {props.post.date}
+                    <b>Date:</b> {props.post.date}
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <b>Location Description:</b>  {props.post.location}
                 </p>
                 <p>
-                    Latitude: {props.post.latitude}
+                    <b>Latitude:</b>  {props.post.latitude}
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <b>Logitude:</b>  {props.post.logitude}
                 </p>
+
                 <p>
-                    Logitude: {props.post.logitude}
-                </p>
-                <p>
-                    Location Description: {props.post.location}
-                </p>
-                <p>
-                    Encounter Summary: {props.post.description}
+                    <b>Encounter Summary:</b>  {props.post.description}
                 </p>
                 <button type="button" onClick={() => props.history.push(`/posts/${props.post.id}/edit`)}>
                     Edit

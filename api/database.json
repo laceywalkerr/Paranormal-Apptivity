@@ -9,6 +9,7 @@
       "aboutMe": "varchar"
     }
   ],
+  
   "posts": [
     {
       "id": 3,
@@ -29,12 +30,14 @@
       "id": 4
     }
   ],
+
   "catagory": [
     {
       "id": "int",
       "catagoryName": "varchar"
     }
   ],
+
   "chatroom": [
     {
       "id": 1,
@@ -53,5 +56,6 @@
       "id": 4
     }
   ],
+
   "friends": []
 }

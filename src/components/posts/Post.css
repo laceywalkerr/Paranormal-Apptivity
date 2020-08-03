@@ -1,9 +1,8 @@
 .container-cards {
-    /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px; /* 5px rounded corners */
-    background: rgb(158, 158, 160);
+    border-radius: 5px; 
+    background: white;
     margin-bottom: 2em;
     flex: 0 1 24%;
   }
@@ -16,16 +15,17 @@
     margin-top: 0;
     margin-bottom: .5em;
     font-weight: bold;
-    color: rgb(43, 112, 241);
+    color: rgb(80, 7, 109);
   }
   
   .card-content p {
-    font-size: 80%;
-    color: darkslategrey;
+    font-size: 150%;
+    color: black;
+    text-align: center;
   }
   
   .content-posttitle {
-    color: darkslategrey;
+    color: white;
   }
   
   .card-outside button {
@@ -42,6 +42,3 @@
     width: 100%;
   }
   
-  .card-outside button:hover {
-    background-color: darkblue;
-  }
