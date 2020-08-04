@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PostManager from '../../modules/PostManager';
 
 const PostForm = props => {
-  const [post, setPost] = useState({ title: "", date: "", latitude: "", logitude: "", location: "", description: ""});
+  const [post, setPost] = useState({ userId: parseInt(sessionStorage.activeUserId), title: "", date: "", latitude: "", logitude: "", location: "", description: ""});
   const [isLoading, setIsLoading] = useState(false);
 
   const handleFieldChange = evt => {

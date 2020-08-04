@@ -1,8 +1,16 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
+import UserManager from "../../modules/UserManager"
 import "./Login.css"
 
 const Login = props => {
-  const [credentials, setCredentials] = useState({ email: "", password: ""});
+  const [credentials, setCredentials] = useState({ email: "", password: "", userId: 0 });
+  const [users, setUsers] = useState([])
+  useEffect (() => {
+    UserManager.GetAll("users")
+    .then((response) => {
+        setUsers(response)
+    })
+}, [])
 
   const handleFieldChange = (evt) => {
     const stateToChange = { ...credentials };
@@ -12,8 +20,17 @@ const Login = props => {
 
   const handleLogin = (e) => {
     e.preventDefault();
+    const emailValue = document.getElementById("email").value
+    users.forEach(user => {
+      if (user.email!==emailValue){
+        return (
+          alert("email is incorrect")
+        )
+      } else {
+        credentials.userId=user.id
+        props.setUser(credentials)}
+    })
 
-    props.setUser(credentials)
 
     props.history.push("/posts");
   }

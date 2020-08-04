@@ -16,7 +16,7 @@ import FriendCard from "../components/friends/FriendCard"
 const ApplicationViews = (props) => {
   const hasUser = props.hasUser;
   const setUser = props.setUser;
-  
+  const userPosts = true
 
   return (
       <>
@@ -38,6 +38,16 @@ const ApplicationViews = (props) => {
         render={props => {
           if (hasUser) {
             return <PostList {...props} />
+          } else {
+            return <Redirect to="/login" {...props} />
+          }
+        }} />
+
+      <Route exact
+        path="/myjournal"
+        render={props => {
+          if (hasUser) {
+            return <PostList userPosts={userPosts} {...props} />
           } else {
             return <Redirect to="/login" {...props} />
           }

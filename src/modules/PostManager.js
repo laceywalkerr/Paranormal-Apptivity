@@ -7,7 +7,9 @@ export default {
   getAll() {
     return fetch(`${remoteURL}/posts`).then(result => result.json())
   },
-
+  getUsersPosts(){
+    return fetch(`${remoteURL}/posts?userId=${sessionStorage.activeUserId}`).then(result => result.json())
+  },
   post(newPost) {
     return fetch(`${remoteURL}/posts`, {
         method: "POST",
