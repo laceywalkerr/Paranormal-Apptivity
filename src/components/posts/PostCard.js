@@ -10,7 +10,8 @@ const PostCard = props => {
                     <img src={require("./postimg.png")} alt="Entry Icon" />
                 </picture>
                 <h3>
-                    Title: <span className="card-posttitle">
+                <span className="card-posttitle">
+                    Title: &nbsp;
                     {props.post.title}</span>
                 </h3>
                 <p>
@@ -27,15 +28,19 @@ const PostCard = props => {
                 <p>
                     <b>Encounter Summary:</b>  {props.post.description}
                 </p>
-                <button type="button" onClick={() => props.history.push(`/posts/${props.post.id}/edit`)}>
-                    Edit
-                    </button>
+                <div className="button">
                 <button type="button" onClick={() => props.deletePost(props.post.id)}>
                     Delete Entry
                     </button>
+                    &nbsp;
                 <Link to={`/posts/${props.post.id}`}>
                     <button>More Info</button>
                 </Link>
+                &nbsp;
+                <button type="button" onClick={() => props.history.push(`/posts/${props.post.id}/edit`)}>
+                    Edit
+                    </button>
+                </div>
             </div>
         </div>
     );

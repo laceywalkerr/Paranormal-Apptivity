@@ -17,6 +17,7 @@ const Para = () => {
 
   const setUser = user => {
     sessionStorage.setItem("credentials", JSON.stringify(user));
+    sessionStorage.setItem("activeUserId", JSON.stringify(user.userId));
     setHasUser(isAuthenticated());
   };
 

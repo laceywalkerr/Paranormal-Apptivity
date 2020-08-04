@@ -24,21 +24,14 @@
     text-align: center;
   }
   
-  .content-posttitle {
-    color: white;
+  .card-posttitle {
+    color: purple;
+    text-align: center;
   }
   
-  .card-outside button {
+ .button {
     background-color: black;
-    border: none;
-    color: ghostwhite;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    padding: .5em;
-    border-radius: 2px;
-    margin: .1em;
-    width: 100%;
+    /* text-size: 150%; */
   }
   
