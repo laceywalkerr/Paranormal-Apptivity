@@ -4,15 +4,24 @@
       "id": 1,
       "userName": "Lacey",
       "email": "lacey@g.com",
-      "password": "sadie",
-      "img": "img",
-      "aboutMe": "varchar"
-    }
-  ],
-  
-  "posts": [
+      "password": "password"
+    },
+    {
+      "id": 2,
+      "userName": "Gus",
+      "email": "gus@g.com",
+      "password": "password"
+    },
     {
       "id": 3,
+      "userName": "Sadie",
+      "email": "sadie@g.com",
+      "password": "meow"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
       "userId": 1,
       "title": "Bright Lights ",
       "date": "07-29-20",
@@ -29,18 +38,25 @@
       "logitude": "86°47′05″W",
       "location": "Union Station, Nashville TN",
       "description": "Dude. Okay. So I was at Union Station, and I saw this HUGE jaguar! I'm not even joking!! I tried to take a photo but when I pulled out my phone it was already gone. I ran for it lol.",
-      "id": 4
-    
+      "id": 2
+    },
+    {
+      "userId": 2,
+      "title": "Bigfoot Sighting",
+      "date": "08-03-20",
+      "latitude": "46.134549",
+      "logitude": "-123.138991",
+      "location": "Steweart Creek RD by the Quincy Reservoir",
+      "description": "Dude.... okay. I was driving down the highway and on the side of the road I saw this HUGE hairy man! I think it was bigfoot!!!! ",
+      "id": 3
     }
   ],
-
   "catagory": [
     {
       "id": "int",
       "catagoryName": "varchar"
     }
   ],
-
   "chatroom": [
     {
       "id": 1,
@@ -57,8 +73,11 @@
     {
       "chat": "Did ya'll watch that new episode of ghost adventures last night? It creeped me out lol",
       "id": 4
+    },
+    {
+      "chat": "Hello fellow comrades! ",
+      "id": 5
     }
   ],
-
   "friends": []
 }
