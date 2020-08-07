@@ -29,7 +29,7 @@ const PostList = (props) => {
             getPostByUser()
         } else {
         getPosts();}
-    }, []);
+    }, [props.userPosts]);
 
     useEffect(() => {
         setFilteredPosts(
@@ -37,14 +37,7 @@ const PostList = (props) => {
                 post.description.toLowerCase().includes(search.toLowerCase()))
         )
     }, [search, posts]);
-    
-    // useEffect(() => {
-    //     setFilteredPosts(
-    //       posts.filter(post =>
-    //         post.name.toLowerCase().includes(search.toLowerCase())
-    //       )
-    //     );
-    //   }, [search, posts]);
+
 
     return (
         <>
@@ -57,7 +50,7 @@ const PostList = (props) => {
         </button>
         </section>
         <Form className="dashForm postListSearch">
-                <FormControl className="dashcontrol" type="text" placeholder="Search posts" onChange={event => setSearch(event.target.value)} className="mr-sm-2" />
+                <FormControl className="dashcontrol" type="text" placeholder="Search posts" onChange={event => setSearch(event.target.value)} className="form" />
             </Form>
         <div className="container-cards">
             {filteredPosts.map(post => 

@@ -18,12 +18,12 @@ const NavBar = props => {
         <ul className="container">
           <li>
           <Link className="nav-link" to="/">
-              Dashboard 
+              Home 
             </Link>
           </li>
           <li>
-          <Link className="nav-link" to="/myjournal">
-              My Journal
+          <Link className="nav-link" to="/posts">
+              Dashboard
             </Link>
           </li>
           <li>

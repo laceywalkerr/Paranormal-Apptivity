@@ -34,7 +34,7 @@ const ApplicationViews = (props) => {
 
       {/* ***************POSTS**************** */}
       <Route exact
-        path="/posts"
+        path="/myjournal"
         render={props => {
           if (hasUser) {
             return <PostList {...props} />
@@ -44,7 +44,7 @@ const ApplicationViews = (props) => {
         }} />
 
       <Route exact
-        path="/myjournal"
+        path="/posts"
         render={props => {
           if (hasUser) {
             return <PostList userPosts={userPosts} {...props} />
