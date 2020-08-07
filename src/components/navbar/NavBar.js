@@ -11,9 +11,9 @@ const NavBar = props => {
 
   return (
     <header>
-      <h1 className="site-title">
-        <img src={require("./navtitle.png")} alt="Paranormal Apptivity Site Logo" />
-      </h1>
+      <div className="photo">
+        <img src={require("./navtitle.png")} alt="Paranormal Apptivity Site Logo" className="photo"/>
+      </div>
       <nav>
         <ul className="container">
           <li>

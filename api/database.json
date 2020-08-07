@@ -77,6 +77,10 @@
     {
       "chat": "Hello fellow comrades! ",
       "id": 5
+    },
+    {
+      "chat": "is anyone awake?",
+      "id": 6
     }
   ],
   "friends": []

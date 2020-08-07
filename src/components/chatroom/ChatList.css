@@ -1,0 +1,27 @@
+.btn {
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+    border-style: double;
+    background-color: #FFE8FE;
+    border-color: black;
+    border-radius: 15px;
+    box-shadow: 10 9px #999;
+
+
+
+  }
+  
+  .btn:hover {
+      background-color: #6B2A7B;
+      color: white;
+    }
+  
+  .btn:active {
+    color: white;
+    background-color:#6B2A7B;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+
+  }

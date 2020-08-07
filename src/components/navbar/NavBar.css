@@ -4,11 +4,9 @@
     
   }
   
-  .site-title {
+  .photo {
     display: flex;
     justify-content: center;
-    height: auto;
-    width: auto;
   }
   
   nav .container {
