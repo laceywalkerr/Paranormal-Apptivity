@@ -4,9 +4,9 @@
     
   }
   
-  .photo {
-    display: flex;
-    justify-content: center;
+  .navtitle {
+    height: 30%;
+    width: 30%;
   }
   
   nav .container {

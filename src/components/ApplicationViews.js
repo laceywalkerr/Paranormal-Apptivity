@@ -20,12 +20,22 @@ const ApplicationViews = (props) => {
 
   return (
       <>
- 
+{/*  
       <Route
         exact
         path="/"
         render={props => {
           return <Home {...props} />;
+        }} /> */}
+
+      <Route exact
+        path="/"
+        render={props => {
+          if (hasUser) {
+            return <PostList {...props} />
+          } else {
+            return <Redirect to="/login" {...props} />
+          }
         }} />
 
       <Route exact path="/login" render={props => {
