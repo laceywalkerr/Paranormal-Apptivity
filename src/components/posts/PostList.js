@@ -37,14 +37,7 @@ const PostList = (props) => {
                 post.description.toLowerCase().includes(search.toLowerCase()))
         )
     }, [search, posts]);
-    
-    // useEffect(() => {
-    //     setFilteredPosts(
-    //       posts.filter(post =>
-    //         post.name.toLowerCase().includes(search.toLowerCase())
-    //       )
-    //     );
-    //   }, [search, posts]);
+
 
     return (
         <>
