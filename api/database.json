@@ -16,7 +16,13 @@
       "id": 3,
       "userName": "Sadie",
       "email": "sadie@g.com",
-      "password": "meow"
+      "password": "password"
+    },
+    {
+      "id": 4,
+      "userName": "andy",
+      "email": "andy@g.com",
+      "password": "password"
     }
   ],
   "posts": [
@@ -31,14 +37,14 @@
       "description": "I saw a bright light in the old house in the back of the property.  Jinkies!"
     },
     {
+      "id": 2,
       "userId": 1,
       "title": "Phantom Cat",
-      "date": "01-02-20",
+      "date": "01-03-20",
       "latitude": "36°09′26″N",
       "logitude": "86°47′05″W",
       "location": "Union Station, Nashville TN",
-      "description": "Dude. Okay. So I was at Union Station, and I saw this HUGE jaguar! I'm not even joking!! I tried to take a photo but when I pulled out my phone it was already gone. I ran for it lol.",
-      "id": 2
+      "description": "Dude. Okay. So I was at Union Station, and I saw this HUGE jaguar! I'm not even joking!! I tried to take a photo but when I pulled out my phone it was already gone. I ran for it lol."
     },
     {
       "userId": 2,
@@ -49,6 +55,16 @@
       "location": "Steweart Creek RD by the Quincy Reservoir",
       "description": "Dude.... okay. I was driving down the highway and on the side of the road I saw this HUGE hairy man! I think it was bigfoot!!!! ",
       "id": 3
+    },
+    {
+      "userId": 3,
+      "title": "Ghost in the street",
+      "date": "08-07-2020",
+      "latitude": "36.0894° N",
+      "logitude": "86.7425° W",
+      "location": "Nashville, Tennessee, USA",
+      "description": "Y'alll there was a ghost i saw in the street. I swear, WEIRDDDDDD",
+      "id": 4
     }
   ],
   "catagory": [
@@ -77,6 +93,14 @@
     {
       "chat": "Hello fellow comrades! ",
       "id": 5
+    },
+    {
+      "chat": "is anyone awake?",
+      "id": 6
+    },
+    {
+      "chat": "Presenting things is hard!",
+      "id": 7
     }
   ],
   "friends": []

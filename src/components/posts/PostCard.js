@@ -4,10 +4,9 @@ import "./Post.css"
 
 const PostCard = props => {
     return (
-        <div className="container-cards">
             <div className="card-content">
-                <picture>
-                    <img src={require("./postimg.png")} alt="Entry Icon" />
+                <picture className="postimg">
+                    <img src={require("./postimg.png")} alt="Entry Icon"  />
                 </picture>
                 <h3>
                 <span className="card-posttitle">
@@ -42,7 +41,7 @@ const PostCard = props => {
                     </button>
                 </div>
             </div>
-        </div>
+
     );
 };
 

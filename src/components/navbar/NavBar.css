@@ -4,11 +4,9 @@
     
   }
   
-  .site-title {
-    display: flex;
-    justify-content: center;
-    height: auto;
-    width: auto;
+  .navtitle {
+    height: 30%;
+    width: 30%;
   }
   
   nav .container {

@@ -1,5 +1,4 @@
 import React from "react"
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import PostList from "../posts/PostList"
 import "./Home.css"
 
@@ -10,8 +9,8 @@ const Home = () => {
     return (
         <>
           <div className="home">
-              <h2>Welcome to the Home Page!</h2>
-              <h2>More coming soon!</h2>
+              <h2>Welcome to the Home Page</h2>
+              <h5>Search for Stories Here!</h5>
           </div>
           
             <PostList />
