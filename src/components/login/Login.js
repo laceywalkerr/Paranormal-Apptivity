@@ -5,13 +5,14 @@ import "./Login.css"
 
 const Login = props => {
   const [credentials, setCredentials] = useState({ email: "", password: "", userId: 0 });
-  const [users, setUsers] = useState([])
-  useEffect (() => {
-    UserManager.GetAll("users")
-    .then((response) => {
-        setUsers(response)
-    })
-}, [])
+//   const [users, setUsers] = useState([])
+
+//   useEffect (() => {
+//     UserManager.GetAll("users")
+//     .then((response) => {
+//         setUsers(response)
+//     })
+// }, [])
 
   const handleFieldChange = (evt) => {
     const stateToChange = { ...credentials };
@@ -22,18 +23,28 @@ const Login = props => {
   const handleLogin = (e) => {
     e.preventDefault();
     const emailValue = document.getElementById("email").value
-    users.forEach(user => {
-      if (user.email!==emailValue){
-        return (
-          alert("email is incorrect")
-        )
-      } else {
+    const passwordValue = document.getElementById("password").value
+    UserManager.GetAll()
+    .then(users => {
+    
+    users.find(user => {
+      if (user.email === emailValue && user.password === passwordValue){
         credentials.userId=user.id
-        props.setUser(credentials)}
-    })
+        
+        props.setUser(credentials)
+        props.history.push("/posts");
+        return 
+        
+
+      }
+
+      else  if (user.email !== emailValue && user.password !== passwordValue) {
+      alert("email is incorrect")
+
+    }
+    })})
 
 
-    props.history.push("/posts");
   }
 
   return (
