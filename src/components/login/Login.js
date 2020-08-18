@@ -65,6 +65,9 @@ const Login = props => {
 
           <label htmlFor="inputPassword">Password</label>
         </div>
+        
+        <button type="submit">Register</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <button type="submit">Sign in</button>
       </fieldset>
     </form>
