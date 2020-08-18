@@ -1,4 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Capstone Project: Paranormal-Apptivity 
+
+Concepts covered in this project include JavaScript, HTML, CSS, session storage, creating a JSON database, posting/editing/deleting the data in the database with forms and event listeners on the DOM, and associating that data with a userID.
+
+Giving users a way to tell others their stories within an open community.
+
+Save and track those creepy encounters, meet other ghost-hunting friends, or simply find out if that local pizza place has a poltergeist.
+
+This website was made by Lacey Walker
+
 
 ## Available Scripts
 
