@@ -65,6 +65,46 @@
       "location": "Nashville, Tennessee, USA",
       "description": "Y'alll there was a ghost i saw in the street. I swear, WEIRDDDDDD",
       "id": 4
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "title": "Sleep Paralysis",
+      "date": "08-16-2020",
+      "latitude": "36°07'44.1",
+      "logitude": "86°46'39.5",
+      "location": "Hattie B's",
+      "description": "I ate at hattie b's at got sleep paralysis 3 nights in a row."
+    },
+    {
+      "userId": 1,
+      "title": "Haunted Hotel",
+      "date": "08-13-2020",
+      "latitude": "35.5273° N",
+      "logitude": "86.3344° W",
+      "location": "Walking Horse Haunted Hotel",
+      "description": "When we went to check in to our rooms, as soon as I entered the hallway our rooms were in, I remember almost feeling as though I walked into a 'wall' of… bad energy? I just felt so unnerved and uneasy in that hallway, but I passed it off as an overactive imagination. I slept the first night without any issues other than waking up a few times. The next morning at breakfast, one of my sisters mentioned feeling really uncomfortable in the hallway, almost as if the air was crushing. It unnerved me even more that I wasn't the only one who felt weirded out, plus she was an adult at the time, so it further cemented in my head that that wing of the hotel was odd.",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "title": "Rocking Horse",
+      "date": "07-17-2020",
+      "latitude": "N/A",
+      "logitude": "N/A",
+      "location": "my childhood home, not comfortable disclosing",
+      "description": "One night, when I was maybe 10 or 12, I had trouble falling asleep. My bedroom was the entire top floor of our house with my bed and such being on the left side and storage closets and a play area on the right. I was lying in bed when I heard a noise from the other side of the room and saw a rocking horse begin to rock. It was sitting just outside one of the storage closet doors. It proceeded to rock its way halfway across the room and stopped dead under the ceiling light. At this point, I was freaking out and just buried my head under my blankets and never peeked out again until morning. When I woke up, the rocking horse was still in the middle of my room. Furthermore, I got a stern reprimand from my parents for being up out of bed playing with my toys well past my bedtime. Their bedroom was directly below the storage closet/play area and had heard creaking shuffling across the room.",
+      "id": 8
+    },
+    {
+      "userId": 4,
+      "title": "Gus",
+      "date": "2020-07-29",
+      "latitude": "N/A",
+      "logitude": "N/A",
+      "location": "Mcdonalds",
+      "description": "I saw a ghost eating a big mac.",
+      "id": 10
     }
   ],
   "catagory": [
@@ -93,8 +133,11 @@
     {
       "chat": "is anyone awake?",
       "id": 5
+    },
+    {
+      "chat": "Hello everyone! Happy capstone!",
+      "id": 6
     }
-
   ],
   "friends": []
 }

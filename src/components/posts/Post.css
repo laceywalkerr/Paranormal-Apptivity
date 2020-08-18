@@ -1,4 +1,4 @@
-
+/* 
 .card-content {
   padding: .5em;
   margin: 8px;
@@ -7,6 +7,19 @@
   align-items: center;
   width: 500px;
   height: 400px;
+  border-radius: 25px;
+  box-shadow: 3px 7px 9px 6px grey;
+
+  
+} */
+
+
+.card-content {
+  padding: .5em;
+  margin: 8px;
+  border-style: solid;
+  border-color: black;
+  align-items: center;
   border-radius: 25px;
   box-shadow: 3px 7px 9px 6px grey;
 
@@ -32,7 +45,9 @@
 .card-posttitle {
   color: purple;
   text-align: center;
+  
 }
+  
 
 .button {
   transition-duration: 0.4s;
@@ -42,4 +57,18 @@
 .button:hover {
   background-color: black;
   color: blue;
+}
+
+.formgrid {
+  
+  padding: .5em;
+  margin: 8px;
+  border-style: solid;
+  border-color: black;
+  align-items: center;
+  width: 500px;
+  height: 400px;
+  border-radius: 25px;
+  box-shadow: 3px 7px 9px 6px grey;
+  text-size-adjust: bold;
 }

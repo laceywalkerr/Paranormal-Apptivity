@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PostManager from '../../modules/PostManager';
+import "./Post.css"
 
 const PostForm = props => {
   const [post, setPost] = useState({ userId: parseInt(sessionStorage.activeUserId), title: "", date: "", latitude: "", logitude: "", location: "", description: ""});
@@ -26,6 +27,7 @@ const PostForm = props => {
     <>
       <form>
         <fieldset>
+          <center>
           <div className="formgrid">
             <input
               type="text"
@@ -34,17 +36,17 @@ const PostForm = props => {
               id="title"
               placeholder="Post title"
             />
-            <label htmlFor="title">Title</label>
-            
+            {/* <label htmlFor="title">Title</label> */}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input
-              type="text"
+              type="date"
               required
               onChange={handleFieldChange}
               id="date"
               placeholder="Date"
             />
-            <label htmlFor="date">Date</label>
-            
+            {/* <label htmlFor="date">Date</label> */}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input
               type="text"
               required
@@ -52,8 +54,8 @@ const PostForm = props => {
               id="latitude"
               placeholder="Latitude"
             />
-            <label htmlFor="latitude">Latitude</label>
-
+            {/* <label htmlFor="latitude">Latitude</label> */}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input
               type="text"
               required
@@ -61,8 +63,8 @@ const PostForm = props => {
               id="logitude"
               placeholder="Logitude"
             />
-            <label htmlFor="logitude">Logitude</label>
-
+            {/* <label htmlFor="logitude">Logitude</label> */}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input
               type="text"
               required
@@ -70,16 +72,17 @@ const PostForm = props => {
               id="location"
               placeholder="Location"
             />
-            <label htmlFor="location">Location</label>
-
-            <input
+            {/* <label htmlFor="location">Location</label> */}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <textarea
                 type="text"
                 required
                 onChange={handleFieldChange}
                 id="description"
                 placeholder="Description"
+                
               />
-              <label htmlFor="description">Description</label>
+              {/* <label htmlFor="description">Description</label> */}
 
           </div>
           <div className="alignRight">
@@ -89,6 +92,7 @@ const PostForm = props => {
               onClick={constructNewPost}
             >Submit</button>
           </div>
+          </center>
         </fieldset>
       </form>
     </>

@@ -51,7 +51,7 @@ const Login = props => {
     <form onSubmit={handleLogin}>
       <fieldset className="login">
         <h3>Hello, please sign in!</h3>
-        <div className="formgrid">
+        <div className="formgridlogin">
           <input onChange={handleFieldChange} type="email"
           id="email"
           placeholder="Email Address"
