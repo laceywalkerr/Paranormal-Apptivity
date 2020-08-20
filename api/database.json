@@ -137,6 +137,10 @@
     {
       "chat": "Hello everyone! Happy capstone!",
       "id": 6
+    },
+    {
+      "chat": "The moon looked like a ufo lol oops!",
+      "id": 7
     }
   ],
   "friends": []
