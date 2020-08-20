@@ -5,9 +5,9 @@ import "./Post.css"
 const PostCard = props => {
     return (
             <div className="card-content">
-                <picture className="postimg">
+                {/* <picture className="postimg">
                     <img src={require("./postimg.png")} alt="Entry Icon"  />
-                </picture>
+                </picture> */}
                 <h3>
                 <span className="card-posttitle">
                     Title: &nbsp;
