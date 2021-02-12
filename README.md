@@ -79,7 +79,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 
 
-To run project:
-download npm install --save in project base file
-cd down to api file, run "Json-server -p 5002 -w database.json"
-in base file, run "npm start"
+To run project: <br>
+download npm install --save in project base file <br>
+cd down to api file, run "Json-server -p 5002 -w database.json" <br>
+in base file, run "npm start" <br>
