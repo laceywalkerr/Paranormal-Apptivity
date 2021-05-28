@@ -83,3 +83,6 @@ To run project: <br>
 download npm install --save in project base file <br>
 cd down to api file, run "Json-server -p 5002 -w database.json" <br>
 in base file, run "npm start" <br>
+
+
+![alt text](https://i.imgur.com/Dj8yah7.png)
